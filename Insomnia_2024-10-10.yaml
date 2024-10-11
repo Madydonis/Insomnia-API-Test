@@ -1,0 +1,934 @@
+_type: export
+__export_format: 4
+__export_date: 2024-10-11T02:26:07.731Z
+__export_source: insomnia.desktop.app:v10.0.0
+resources:
+  - _id: req_2bc9ce02b37d43fc86d68e5db82e1636
+    parentId: fld_07079b6bcc1c43fdab7ef2996ba94c00
+    modified: 1728603639707
+    created: 1728602376516
+    url: http://localhost:8000/tareas
+    name: Creación de Tarea
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "title": "tarea 1",
+          "description": "tarea de prueba",
+          "created_at": "2024-09-10T00:00:00",
+          "deadline": "2024-10-01T00:00:00",
+          "priority": "Alta",
+          "status": "Pendiente",
+          "assigned_user": "Mady",
+          "category": "Ventas"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375123
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_07079b6bcc1c43fdab7ef2996ba94c00
+    parentId: fld_b54aec8a174b47adb388eb0094a1cb14
+    modified: 1728602376515
+    created: 1728602376515
+    name: Creación de Tarea
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1728602375124
+    preRequestScript: ""
+    afterResponseScript: ""
+    authentication: {}
+    _type: request_group
+  - _id: fld_b54aec8a174b47adb388eb0094a1cb14
+    parentId: wrk_1cdae33f6c814182acb4f0e5c686537d
+    modified: 1728602376513
+    created: 1728602376513
+    name: ProTask - Escenarios de Prueba - LAB07
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1728602375125
+    preRequestScript: ""
+    afterResponseScript: ""
+    authentication: {}
+    _type: request_group
+  - _id: wrk_1cdae33f6c814182acb4f0e5c686537d
+    parentId: null
+    modified: 1728602376507
+    created: 1728602376507
+    name: ProTask - Escenarios de Prueba - LAB07
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_7696ffa46ac64b8cb47c1c5ec3ab1095
+    parentId: fld_07079b6bcc1c43fdab7ef2996ba94c00
+    modified: 1728602376518
+    created: 1728602376518
+    url: http://localhost:8000/tareas
+    name: Tarea 1 - Valida
+    description: ""
+    method: POST
+    body:
+      mimeType: ""
+      text: "{\r
+
+        \  \"title\": \"tarea 1\",\r
+
+        \  \"description\": \"tarea de prueba\",\r
+
+        \  \"created_at\": \"2024-09-10T00:00:00\",\r
+
+        \  \"deadline\": \"2024-10-01T00:00:00\",\r
+
+        \  \"priority\": \"Alta\",\r
+
+        \  \"status\": \"Pendiente\",\r
+
+        \  \"assigned_user\": \"Pablo\",\r
+
+        \  \"category\": \"Ventas\"\r
+
+        }"
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375122
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_548b1bcf5e8c464c9751a97aef904e92
+    parentId: fld_07079b6bcc1c43fdab7ef2996ba94c00
+    modified: 1728603660378
+    created: 1728602376520
+    url: http://localhost:8000/tareas
+    name: Tarea 2 - Validación de cadena
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: "{\r
+
+        \  \"title\": \"t2\",\r
+
+        \  \"description\": \"tarea de prueba\",\r
+
+        \  \"created_at\": \"2024-09-10T00:00:00\",\r
+
+        \  \"deadline\": \"2024-10-01T00:00:00\",\r
+
+        \  \"priority\": \"Alta\",\r
+
+        \  \"status\": \"Pendiente\",\r
+
+        \  \"assigned_user\": \"Cathy\",\r
+
+        \  \"category\": \"Ventas\"\r
+
+        }"
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375121
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_07a4546e0e4b4326a9b312eb69af55bb
+    parentId: fld_07079b6bcc1c43fdab7ef2996ba94c00
+    modified: 1728603664755
+    created: 1728602376521
+    url: http://localhost:8000/tareas
+    name: Tarea 3 - Validación de fecha de creación
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: "{\r
+
+        \  \"title\": \"tarea 1\",\r
+
+        \  \"description\": \"tarea de prueba\",\r
+
+        \  \"created_at\": \"2024-11-10T00:00:00\",\r
+
+        \  \"deadline\": \"2024-10-01T00:00:00\",\r
+
+        \  \"priority\": \"Alta\",\r
+
+        \  \"status\": \"Pendiente\",\r
+
+        \  \"assigned_user\": \"Mady\",\r
+
+        \  \"category\": \"Ventas\"\r
+
+        }"
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375120
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5bcfb53d17da4678b01c08d4beb5abcb
+    parentId: fld_07079b6bcc1c43fdab7ef2996ba94c00
+    modified: 1728603667804
+    created: 1728602376523
+    url: http://localhost:8000/tareas
+    name: Tarea 4 - Validación de categoría
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: "{\r
+
+        \  \"title\": \"tarea 1\",\r
+
+        \  \"description\": \"tarea de prueba\",\r
+
+        \  \"created_at\": \"2024-09-10T00:00:00\",\r
+
+        \  \"deadline\": \"2024-10-01T00:00:00\",\r
+
+        \  \"priority\": \"Alta\",\r
+
+        \  \"status\": \"Pendiente\",\r
+
+        \  \"assigned_user\": \"Mariandre\",\r
+
+        \  \"category\": \"RRHH\"\r
+
+        }"
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375119
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1db1cf008c814fa684f1d476f25cb349
+    parentId: fld_07079b6bcc1c43fdab7ef2996ba94c00
+    modified: 1728603670620
+    created: 1728602376524
+    url: http://localhost:8000/tareas
+    name: Tarea 2 - Valida
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: "{\r
+
+        \  \"title\": \"tarea 2\",\r
+
+        \  \"description\": \"tarea de prueba\",\r
+
+        \  \"created_at\": \"2024-09-10T00:00:00\",\r
+
+        \  \"deadline\": \"2024-10-01T00:00:00\",\r
+
+        \  \"priority\": \"Media\",\r
+
+        \  \"status\": \"Pendiente\",\r
+
+        \  \"assigned_user\": \"Cathy\",\r
+
+        \  \"category\": \"Administración\"\r
+
+        }"
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375118
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d894cd6db5e245a48181de21144139c9
+    parentId: fld_07079b6bcc1c43fdab7ef2996ba94c00
+    modified: 1728603674983
+    created: 1728602376525
+    url: http://localhost:8000/tareas
+    name: Tarea 3 - Valida
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: "{\r
+
+        \  \"title\": \"tarea 3\",\r
+
+        \  \"description\": \"tarea de prueba\",\r
+
+        \  \"created_at\": \"2024-09-10T00:00:00\",\r
+
+        \  \"deadline\": \"2024-10-01T00:00:00\",\r
+
+        \  \"priority\": \"Baja\",\r
+
+        \  \"status\": \"Pendiente\",\r
+
+        \  \"assigned_user\": \"Madi\",\r
+
+        \  \"category\": \"Soporte\"\r
+
+        }"
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375117
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_823e545121e545f399107d5fd05e351d
+    parentId: fld_07079b6bcc1c43fdab7ef2996ba94c00
+    modified: 1728603677600
+    created: 1728602376527
+    url: http://localhost:8000/tareas
+    name: Tarea 4 - Valida
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: "{\r
+
+        \  \"title\": \"tarea 4\",\r
+
+        \  \"description\": \"tarea de prueba\",\r
+
+        \  \"created_at\": \"2024-09-10T00:00:00\",\r
+
+        \  \"deadline\": \"2024-10-01T00:00:00\",\r
+
+        \  \"priority\": \"Alta\",\r
+
+        \  \"status\": \"Pendiente\",\r
+
+        \  \"assigned_user\": \"Mariandre\",\r
+
+        \  \"category\": \"Desarrollo\"\r
+
+        }"
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375116
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_083269868318469d8eea48a6d3e241ab
+    parentId: fld_36c9ee74e8474b2cbe85d9f6d8180fb3
+    modified: 1728602376530
+    created: 1728602376530
+    url: http://localhost:8000/tareas
+    name: Lectura de Tareas
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - name: status
+        value: ""
+        disabled: false
+      - name: priority
+        value: ""
+        disabled: false
+      - name: assigned_user
+        value: ""
+        disabled: false
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375114
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_36c9ee74e8474b2cbe85d9f6d8180fb3
+    parentId: fld_b54aec8a174b47adb388eb0094a1cb14
+    modified: 1728602376529
+    created: 1728602376529
+    name: Lectura de Tareas
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1728602375115
+    preRequestScript: ""
+    afterResponseScript: ""
+    authentication: {}
+    _type: request_group
+  - _id: req_316daf199b994499ad06f3016269d8a0
+    parentId: fld_36c9ee74e8474b2cbe85d9f6d8180fb3
+    modified: 1728602376532
+    created: 1728602376532
+    url: http://localhost:8000/tareas
+    name: Lectura de todas las tareas
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - name: status
+        value: ""
+        disabled: false
+      - name: priority
+        value: ""
+        disabled: false
+      - name: assigned_user
+        value: ""
+        disabled: false
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375113
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d5c0e7efddce4c48b3cc21319f6c5c52
+    parentId: fld_36c9ee74e8474b2cbe85d9f6d8180fb3
+    modified: 1728602376533
+    created: 1728602376533
+    url: http://localhost:8000/tareas
+    name: Filtro por prioridad
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - name: status
+        value: ""
+        disabled: false
+      - name: priority
+        value: Alta
+        disabled: false
+      - name: assigned_user
+        value: ""
+        disabled: false
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375112
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d30450a6c9894bcc975d75918f50ec3d
+    parentId: fld_36c9ee74e8474b2cbe85d9f6d8180fb3
+    modified: 1728602376535
+    created: 1728602376535
+    url: http://localhost:8000/tareas
+    name: Filtro por usuario asignado
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - name: status
+        value: ""
+        disabled: false
+      - name: priority
+        value: ""
+        disabled: false
+      - name: assigned_user
+        value: Pablo
+        disabled: false
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375111
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7f47f218f9f24389b7ca8dfc5fea55ea
+    parentId: fld_36c9ee74e8474b2cbe85d9f6d8180fb3
+    modified: 1728602376536
+    created: 1728602376536
+    url: http://localhost:8000/tareas
+    name: Filtro por estado de tarea
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - name: status
+        value: Cancelada
+        disabled: false
+      - name: priority
+        value: ""
+        disabled: false
+      - name: assigned_user
+        value: ""
+        disabled: false
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375110
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3ea988acdfae4d77aab9e56a769b1d7a
+    parentId: fld_21bd233a6c274f14979452da1aba6fb1
+    modified: 1728602376539
+    created: 1728602376539
+    url: http://localhost:8000/tareas/1
+    name: Lectura de Tarea Específica
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375108
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_21bd233a6c274f14979452da1aba6fb1
+    parentId: fld_b54aec8a174b47adb388eb0094a1cb14
+    modified: 1728602376538
+    created: 1728602376538
+    name: Lectura de Tarea Específica
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1728602375109
+    preRequestScript: ""
+    afterResponseScript: ""
+    authentication: {}
+    _type: request_group
+  - _id: req_16d75e6bdb3142a1b4ae57d23470c13e
+    parentId: fld_21bd233a6c274f14979452da1aba6fb1
+    modified: 1728602376540
+    created: 1728602376540
+    url: http://localhost:8000/tareas/1
+    name: Lectura de tarea especifica
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375107
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_05633d62da6e43938ee49b9085a6e29c
+    parentId: fld_76c7da66c5bb4b32841aed012d098235
+    modified: 1728602376543
+    created: 1728602376543
+    url: http://localhost:8000/tareas/1
+    name: Actualización de Tarea
+    description: ""
+    method: PUT
+    body:
+      mimeType: ""
+      text: "{\r
+
+        \  \"title\": \"tarea 1\",\r
+
+        \  \"description\": \"tarea de prueba modificada\",\r
+
+        \  \"created_at\": \"2024-09-10T00:00:00\",\r
+
+        \  \"deadline\": \"2024-10-01T00:00:00\",\r
+
+        \  \"priority\": \"Alta\",\r
+
+        \  \"status\": \"Pendiente\",\r
+
+        \  \"assigned_user\": \"Cathy\",\r
+
+        \  \"category\": \"Ventas\"\r
+
+        }"
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375105
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_76c7da66c5bb4b32841aed012d098235
+    parentId: fld_b54aec8a174b47adb388eb0094a1cb14
+    modified: 1728602376541
+    created: 1728602376541
+    name: Actualización de Tarea
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1728602375106
+    preRequestScript: ""
+    afterResponseScript: ""
+    authentication: {}
+    _type: request_group
+  - _id: req_6166da9caa8b46c9bb6d6772ea3b9bfc
+    parentId: fld_76c7da66c5bb4b32841aed012d098235
+    modified: 1728603712414
+    created: 1728602376545
+    url: http://localhost:8000/tareas/1
+    name: Tarea 1 - Valida - de pendiente a en proceso
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: "{\r
+
+        \  \"title\": \"tarea 1\",\r
+
+        \  \"description\": \"tarea de prueba modificada\",\r
+
+        \  \"created_at\": \"2024-09-10T00:00:00\",\r
+
+        \  \"deadline\": \"2024-10-01T00:00:00\",\r
+
+        \  \"priority\": \"Alta\",\r
+
+        \  \"status\": \"En Proceso\",\r
+
+        \  \"assigned_user\": \"Pablo\",\r
+
+        \  \"category\": \"Ventas\"\r
+
+        }"
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375104
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e288da25024a4d5c851f9e6499c04a1f
+    parentId: fld_76c7da66c5bb4b32841aed012d098235
+    modified: 1728603709981
+    created: 1728602376546
+    url: http://localhost:8000/tareas/1
+    name: Tarea 1 - Valida - de en proceso a completada
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: "{\r
+
+        \  \"title\": \"tarea 1\",\r
+
+        \  \"description\": \"tarea de prueba modificada\",\r
+
+        \  \"created_at\": \"2024-09-10T00:00:00\",\r
+
+        \  \"deadline\": \"2024-10-01T00:00:00\",\r
+
+        \  \"priority\": \"Alta\",\r
+
+        \  \"status\": \"Pendiente\",\r
+
+        \  \"assigned_user\": \"Pablo\",\r
+
+        \  \"category\": \"Ventas\"\r
+
+        }"
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375103
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_85cf3b246b014d5c91575db1ab1096f1
+    parentId: fld_76c7da66c5bb4b32841aed012d098235
+    modified: 1728603717219
+    created: 1728602376548
+    url: http://localhost:8000/tareas/2
+    name: Tarea 2 - Valida - de pendiente a cancelada
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: "{\r
+
+        \  \"title\": \"tarea 2\",\r
+
+        \  \"description\": \"tarea de prueba\",\r
+
+        \  \"created_at\": \"2024-09-10T00:00:00\",\r
+
+        \  \"deadline\": \"2024-10-01T00:00:00\",\r
+
+        \  \"priority\": \"Media\",\r
+
+        \  \"status\": \"Cancelada\",\r
+
+        \  \"assigned_user\": \"Cathy\",\r
+
+        \  \"category\": \"Administración\"\r
+
+        }"
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375102
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c776c6873e1840e0a726b7fa72f34a1f
+    parentId: fld_76c7da66c5bb4b32841aed012d098235
+    modified: 1728603719550
+    created: 1728602376549
+    url: http://localhost:8000/tareas/3
+    name: Tarea 3 - Validación de Estado
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: "{\r
+
+        \  \"title\": \"tarea 3\",\r
+
+        \  \"description\": \"tarea de prueba\",\r
+
+        \  \"created_at\": \"2024-09-10T00:00:00\",\r
+
+        \  \"deadline\": \"2024-10-01T00:00:00\",\r
+
+        \  \"priority\": \"Baja\",\r
+
+        \  \"status\": \"Completada\",\r
+
+        \  \"assigned_user\": \"Madi\",\r
+
+        \  \"category\": \"Soporte\"\r
+
+        }"
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375101
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5ab86dc370514e168a27bc7081cb6cd9
+    parentId: fld_7911aa138603489d95685c5d6acad03b
+    modified: 1728602376552
+    created: 1728602376552
+    url: http://localhost:8000/tareas/1
+    name: Eliminación de Tarea
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375099
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_7911aa138603489d95685c5d6acad03b
+    parentId: fld_b54aec8a174b47adb388eb0094a1cb14
+    modified: 1728602376551
+    created: 1728602376551
+    name: Eliminación de Tarea
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1728602375100
+    preRequestScript: ""
+    afterResponseScript: ""
+    authentication: {}
+    _type: request_group
+  - _id: req_d8a711a19af14e27812c131bb99863e3
+    parentId: fld_7911aa138603489d95685c5d6acad03b
+    modified: 1728602376553
+    created: 1728602376553
+    url: http://localhost:8000/tareas/4
+    name: Tarea 4 - Valida
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1728602375098
+    isPrivate: false
+    afterResponseScript: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_b57ede3587eee9a24722efcdefb17cfd5abf1c03
+    parentId: wrk_1cdae33f6c814182acb4f0e5c686537d
+    modified: 1728602394502
+    created: 1728602394502
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1728602394502
+    _type: environment
+  - _id: jar_b57ede3587eee9a24722efcdefb17cfd5abf1c03
+    parentId: wrk_1cdae33f6c814182acb4f0e5c686537d
+    modified: 1728602394504
+    created: 1728602394504
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
